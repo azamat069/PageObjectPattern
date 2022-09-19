@@ -7,6 +7,7 @@ class BasePage():
         self.browser = webdriver.Chrome()
         self.url = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
         self.browser.implicitly_wait(timeout)
+        # self.browser.maximize_window()
 
     def open(self):
         self.browser.get(self.url)
