@@ -5,7 +5,7 @@ from selenium.common.exceptions import NoSuchElementException
 class BasePage():
     def __init__(self, browser, url, timeout=10):
         self.browser = webdriver.Chrome()
-        self.url = "http://selenium1py.pythonanywhere.com/"
+        self.url = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
         self.browser.implicitly_wait(timeout)
 
     def open(self):
